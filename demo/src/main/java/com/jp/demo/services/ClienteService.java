@@ -23,7 +23,7 @@ public class ClienteService {
         return clienteRepository.findById(id).get();
     }
 
-    public void delete(ClienteModel cliente){
-        clienteRepository.delete(cliente);
+    public void delete(Long id){
+        clienteRepository.deleteById(id);
     }
 }
